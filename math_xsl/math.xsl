@@ -2,7 +2,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Задание 2</title>
+                <title>Задание 1</title>
             </head>
             <script id="MathJax-script" async=""
                     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
