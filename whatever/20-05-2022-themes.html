@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body.dark {
+            background: black;
+            color: white;
+        }
+
+        body.light {
+            background: white;
+            color: black;
+        }
+
+        body.dark .container {
+            background: white;
+        }
+
+        body.light .container {
+            background: black;
+        }
+
+        body.dark a {
+            color: black;
+        }
+
+        body.light a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+LOREM IPSUM
+<div class="container">
+    <a href="#dark">DARK</a>
+    <a href="#light">LIGHT</a>
+</div>
+
+<script>
+
+    addEventListener('hashchange', onHashChange);
+
+    function onHashChange() {
+        if (window.location.hash === "#dark") {
+            document.body.classList.add("dark");
+            document.body.classList.remove("light");
+        } else {
+            document.body.classList.add("light");
+            document.body.classList.remove("dark");
+        }
+    }
+
+    onHashChange();
+</script>
+</body>
+</html>
